@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:id="@+id/action_search"
+    app:showAsAction="always"
+    android:title="Search"
+    android:icon="@android:drawable/ic_menu_search"
+    app:actionViewClass="android.widget.SearchView" />
+    <item android:id="@+id/action_excel"
+        android:title="Delete All Data"
+        android:icon="@drawable/ic_unduh"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_delete"
+        android:title="Delete All Data"
+        android:icon="@drawable/ic_delete"
+        app:showAsAction="always"/>
+</menu>

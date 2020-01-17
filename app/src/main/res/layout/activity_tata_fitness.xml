@@ -1,9 +1,246 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#33619f"
     tools:context=".DayaTahan.TataFitnessActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.cardview.widget.CardView
+                    android:padding="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#000"
+                            android:fontFamily="@font/roboto"
+                            android:text="Nama Tes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <TextView
+                            android:textColor="#000"
+                            android:fontFamily="@font/roboto"
+                            android:textStyle="bold"
+                            android:text="Test Multi Fitness"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:padding="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#000"
+                            android:fontFamily="@font/roboto"
+                            android:text="Tujuan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <com.codesgood.views.JustifiedTextView
+                            android:textColor="#000"
+                            android:fontFamily="@font/roboto"
+                            android:textStyle="bold"
+                            android:text="Tes ini bertujuan untuk mengukur daya tahan aerobic seseorang adapun prosedur pelaksanaan test multi fitness adalah sebagai berikut"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </com.codesgood.views.JustifiedTextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:padding="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#000"
+                            android:fontFamily="@font/roboto"
+                            android:text="Alat yang diperlukan "
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <TextView
+                            android:textColor="#000"
+                            android:fontFamily="@font/roboto"
+                            android:textStyle="bold"
+                            android:text="a. Sound system\nb. Mp3\nc. Meteran, stopwatch, bolpoint dan formulir"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:padding="6dp"
+                    android:layout_margin="6dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="Pelaksanaan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="a. "
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                            </TextView>
+                            <com.codesgood.views.JustifiedTextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="Buat dua garis batas sejarak 20 meter"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            </com.codesgood.views.JustifiedTextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="b. "
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                            </TextView>
+                            <com.codesgood.views.JustifiedTextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="Cek bahwa bunyi “TUT” yang menjadi standart untuk pengukuran lapangan"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            </com.codesgood.views.JustifiedTextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="c. "
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                            </TextView>
+                            <com.codesgood.views.JustifiedTextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="Teste herus belari dan menyentuh atau menginjakkan salah satu kaki garis akhir dan berputar (pivot), untuk kembali berlaberlari setelah bunyi terdengar (tunggu sampai bunyi “TUT’’ terdengar)"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            </com.codesgood.views.JustifiedTextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="d. "
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                            </TextView>
+                            <com.codesgood.views.JustifiedTextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="Lari bolak balik terdiri dari beberapa tingkatan. Setiap tinkatan terdiri dari bebrapa balikan. Setiap tingkatan ditandai dengan bunyi “TUT” sebanyak tiga kali, sedangkan setiap balikan ditandai dengan bunyi – bunyi “TUT”"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            </com.codesgood.views.JustifiedTextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="e. "
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                            </TextView>
+                            <com.codesgood.views.JustifiedTextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="Teste dianggap tidak mampu, apabila dua kali berturut – turut tidak dapat menyentuh atau menginjak kakinya pada garis"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            </com.codesgood.views.JustifiedTextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

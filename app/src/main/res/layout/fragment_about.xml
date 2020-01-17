@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutFragment">
+
+    <LinearLayout
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_marginTop="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="250dp"
+            android:layout_height="150dp">
+        </ImageView>
+
+        <com.codesgood.views.JustifiedTextView
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="Go Physical Test merupakan suatu aplikasi yang digunakan untuk menggantikan form manual dalam pendataan test fisik."
+            android:fontFamily="@font/roboto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.codesgood.views.JustifiedTextView>
+        <com.codesgood.views.JustifiedTextView
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="Aplikasi ini diharapkan mampu menggantikan media manual dalam proses pendataannya. Sehingga hasil test dapat didata menggunakan handphone."
+            android:fontFamily="@font/roboto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.codesgood.views.JustifiedTextView>
+    </LinearLayout>
+
+</FrameLayout>

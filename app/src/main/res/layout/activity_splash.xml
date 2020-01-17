@@ -1,9 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#33619f"
     tools:context=".SplashActivity">
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/logok"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo"></ImageView>
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/from"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:text="from :"
+        android:fontFamily="@font/roboto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo_upgris"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/upgris"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+    </ImageView>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_from"
+        android:textSize="16sp"
+        android:fontFamily="@font/roboto"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:text="Prodi PJKR Universitas PGRI Semarang"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+</LinearLayout>
+
+
+</RelativeLayout>

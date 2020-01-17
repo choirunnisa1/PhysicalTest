@@ -1,9 +1,227 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#33619f"
     tools:context=".Kecepatan.TataLariActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.cardview.widget.CardView
+                    android:padding="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#000"
+                            android:fontFamily="@font/roboto"
+                            android:text="Nama Tes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <TextView
+                            android:textColor="#000"
+                            android:fontFamily="@font/roboto"
+                            android:textStyle="bold"
+                            android:text="Tes Lari 300 Meter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:padding="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#000"
+                            android:fontFamily="@font/roboto"
+                            android:text="Tujuan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <com.codesgood.views.JustifiedTextView
+                            android:textColor="#000"
+                            android:fontFamily="@font/roboto"
+                            android:textStyle="bold"
+                            android:text="Mengukur kapasitas anaerobik"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </com.codesgood.views.JustifiedTextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:padding="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#000"
+                            android:fontFamily="@font/roboto"
+                            android:text="Peralatan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <TextView
+                            android:textColor="#000"
+                            android:fontFamily="@font/roboto"
+                            android:textStyle="bold"
+                            android:text="a.Lintasan lari\nb. Stopwacth\nc. Kerucut\nd. Petugas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:padding="6dp"
+                    android:layout_margin="6dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#000"
+                            android:fontFamily="@font/roboto"
+                            android:text="Pelaksanaan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="a. "
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                            </TextView>
+                            <com.codesgood.views.JustifiedTextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="Atlet melakukan pemanasan sebelum tes (joging, peregangan dan sprint pendek)"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            </com.codesgood.views.JustifiedTextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="b. "
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                            </TextView>
+                            <com.codesgood.views.JustifiedTextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="Untuk memulai, semua perserta berbaris dibelakang garis start"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            </com.codesgood.views.JustifiedTextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="c. "
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                            </TextView>
+                            <com.codesgood.views.JustifiedTextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="Pada perintah “Ya”, atlet melakukan lari secepatnya, dan jam dihidupkan."
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            </com.codesgood.views.JustifiedTextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="d. "
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                            </TextView>
+                            <com.codesgood.views.JustifiedTextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="Pencatat skor memberikan skor dengan mencatat total total waktu yang dibtuhkan dalam menjalankan lari 300 m, sampai sepuluh detik"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            </com.codesgood.views.JustifiedTextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>
