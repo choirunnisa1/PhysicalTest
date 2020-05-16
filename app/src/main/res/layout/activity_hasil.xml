@@ -18,16 +18,14 @@
             android:orientation="vertical"
             android:padding="8dp">
 
-            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            <ImageView
                 android:id="@+id/imagehasil"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="15dp"
-                android:src="@mipmap/ic_launcher"
-                app:c_border="true"
-                app:c_border_color="#B05C5858"
-                app:c_border_width="2dp" />
+                android:src="@drawable/logo"
+                />
 
             <TextView
                 android:layout_width="match_parent"

@@ -12,16 +12,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        <ImageView
             android:id="@+id/detailGambar"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="15dp"
-            android:src="@mipmap/ic_launcher"
-            app:c_border="true"
-            app:c_border_color="#797171"
-            app:c_border_width="2dp" />
+            android:src="@drawable/logo" />
 
         <TableLayout
             android:layout_width="match_parent"

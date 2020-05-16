@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:background="@drawable/background"
+        android:background="@drawable/back"
         android:orientation="vertical"
         android:paddingLeft="50dp"
         android:paddingRight="50dp"
@@ -65,6 +65,22 @@
             android:textStyle="bold"
             android:textColor="#fff"
             android:text="tentang"
+            android:background="@drawable/side_two"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Button>
+        <Button
+            android:fontFamily="@font/roboto"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/dapus"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="referensi"
             android:background="@drawable/side_two"
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"

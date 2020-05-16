@@ -16,17 +16,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        <ImageView
             android:id="@+id/image"
-            app:c_border_width="2dp"
-            app:c_border_color="#B05C5858"
-            android:src="@mipmap/ic_launcher"
-            app:c_border="true"
+            android:layout_width="195dp"
+            android:layout_height="160dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="15dp"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            />
+            android:src="@drawable/logo" />
         <TextView
             android:fontFamily="@font/roboto"
             android:layout_marginTop="10dp"

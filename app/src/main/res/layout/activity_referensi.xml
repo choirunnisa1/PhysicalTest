@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    android:padding="10dp"
+    tools:context=".ReferensiActivity">
+
+    <com.codesgood.views.JustifiedTextView
+        android:textColor="#fff"
+        android:fontFamily="@font/roboto"
+        android:textSize="16sp"
+        android:text="Widiastuti. 2011. Tes dan Pengukuran olahraga. Jakarta. Penerbit: PT. RajaGrafindo Persada."
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+    </com.codesgood.views.JustifiedTextView>
+    <com.codesgood.views.JustifiedTextView
+        android:textColor="#fff"
+        android:fontFamily="@font/roboto"
+        android:textSize="16sp"
+        android:text="Widiastuti. 2015. Tes dan Pengukuran olahraga. Jakarta. Penerbit: PT. RajaGrafindo Persada."
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+    </com.codesgood.views.JustifiedTextView>
+    <com.codesgood.views.JustifiedTextView
+        android:textColor="#fff"
+        android:fontFamily="@font/roboto"
+        android:textSize="16sp"
+        android:text="Hanif, A. S. 2016. Falsafah, Pengukuran Dan Teknik Dasar Shoriji Kempo. Jakarta. Penerbit: PT. RajarGrafindo Persada."
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+    </com.codesgood.views.JustifiedTextView>
+    <com.codesgood.views.JustifiedTextView
+        android:textColor="#fff"
+        android:fontFamily="@font/roboto"
+        android:textSize="16sp"
+        android:text="Nugroho, U. 2015. Pedoman Tes Ukur Olahraga. Purwodadi. Penerbit: CV. Sarnu 	Untung."
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+    </com.codesgood.views.JustifiedTextView>
+    <com.codesgood.views.JustifiedTextView
+        android:textColor="#fff"
+        android:fontFamily="@font/roboto"
+        android:textSize="16sp"
+        android:text="Hidayat, S. 2014. Pelatihan Olahraga, Teori Dan Metedologi. Yogjakarta. Penerbit: Graha Ilmu."
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+    </com.codesgood.views.JustifiedTextView>
+
+    <com.codesgood.views.JustifiedTextView
+        android:textColor="#fff"
+        android:fontFamily="@font/roboto"
+        android:textSize="16sp"
+        android:text="Kardiawan, Kusuma, K. C. A. 2014. Pembentukan Dan Pembinaan Kondisi Fisik. Yogjakata. Penerbit: Graha Ilmu."
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+    </com.codesgood.views.JustifiedTextView>
+
+</LinearLayout>

@@ -13,8 +13,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ReferensiActivity"></activity>
         <activity android:name=".DetailDataActivity" />
-        <activity android:theme="@style/AppTheme.NoActionBar" android:name=".TentangActivity" />
+        <activity
+            android:name=".TentangActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".HasilActivity" />
         <activity android:name=".Keseimbangan.TestStrockActivity" />
         <activity android:name=".Keseimbangan.TataStrockActivity" />
