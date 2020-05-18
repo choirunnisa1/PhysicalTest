@@ -47,7 +47,7 @@
                             android:textColor="#000"
                             android:fontFamily="@font/roboto"
                             android:textStyle="bold"
-                            android:text="Tes kekuatan Punggung"
+                            android:text="Tes Kekuatan Otot Tungkai"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
                         </TextView>
@@ -78,7 +78,7 @@
                             android:textColor="#000"
                             android:fontFamily="@font/roboto"
                             android:textStyle="bold"
-                            android:text="Untuk mengukur daya tahan kekuatan otot – otot lengan dan bahu"
+                            android:text="Untuk mengukur kekuatan otot – otot tungkai"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
                         </com.codesgood.views.JustifiedTextView>
@@ -132,37 +132,6 @@
                         <TextView
                             android:textColor="#000"
                             android:fontFamily="@font/roboto"
-                            android:text="Tester "
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-                        </TextView>
-                        <TextView
-                            android:fontFamily="@font/roboto"
-                            android:textStyle="bold"
-                            android:textColor="#000"
-                            android:text="a. Pemandu tes\nb. Pencatat skor"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-                        </TextView>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:padding="6dp"
-                    android:layout_marginTop="6dp"
-                    android:layout_marginRight="6dp"
-                    android:layout_marginLeft="6dp"
-                    app:cardElevation="6dp"
-                    app:cardCornerRadius="6dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <LinearLayout
-                        android:padding="5dp"
-                        android:orientation="vertical"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <TextView
-                            android:textColor="#000"
-                            android:fontFamily="@font/roboto"
                             android:text="Pelaksanaan"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
@@ -183,7 +152,7 @@
                                 android:textColor="#000"
                                 android:fontFamily="@font/roboto"
                                 android:textStyle="bold"
-                                android:text="Peserta berdiri diatas back and leg dynamometer"
+                                android:text="Testi berdiri diatas back and leg dynamometer, tangan memegang handel, badan tegak kaki ditekuk membentuk sudut kurang lebih 45̊."
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
                             </com.codesgood.views.JustifiedTextView>
@@ -204,7 +173,7 @@
                                 android:textColor="#000"
                                 android:fontFamily="@font/roboto"
                                 android:textStyle="bold"
-                                android:text="Tali rantai pada alat diatur dengen posisi setengah jongkok dengan punggung tetap tegak lurus"
+                                android:text="Panjang rantai sesuaikan dengan kebutuhan testi"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
                             </com.codesgood.views.JustifiedTextView>
@@ -225,7 +194,7 @@
                                 android:textColor="#000"
                                 android:fontFamily="@font/roboto"
                                 android:textStyle="bold"
-                                android:text="Kedua lutut bengkok dan rantai diletakkan diantara kedua tungkai, tangan memegang alat lurus ke bawah"
+                                android:text="Testi menarik handel dengan cara meluruskan lutut sampai berdiri tegak."
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
                             </com.codesgood.views.JustifiedTextView>
@@ -246,32 +215,12 @@
                                 android:textColor="#000"
                                 android:fontFamily="@font/roboto"
                                 android:textStyle="bold"
-                                android:text="Alat ditarik dengan menggunakan otot tungkai tanpa bantuan otot tangan dan otot punggung"
+                                android:text="Dilakukan 3 kali ulangan"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
                             </com.codesgood.views.JustifiedTextView>
                         </LinearLayout>
-                        <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-                            <TextView
-                                android:textColor="#000"
-                                android:fontFamily="@font/roboto"
-                                android:textStyle="bold"
-                                android:text="e. "
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent">
-                            </TextView>
-                            <com.codesgood.views.JustifiedTextView
-                                android:textColor="#000"
-                                android:fontFamily="@font/roboto"
-                                android:textStyle="bold"
-                                android:text="Tes ini dilakukan sebanyak dua kali"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-                            </com.codesgood.views.JustifiedTextView>
-                        </LinearLayout>
+
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -297,7 +246,7 @@
                             android:textColor="#000"
                             android:fontFamily="@font/roboto"
                             android:textStyle="bold"
-                            android:text="Skor terbaik dari dua kali percobaan dicatat sebagai skor dalam satuan kilogram (Kg). Dengan tingkat ketelitian 0,5 kg"
+                            android:text="Dicatat jumlah berat yang terbanyak dari tiga angkatan yang dilakukan"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
                         </TextView>

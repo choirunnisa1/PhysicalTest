@@ -6,7 +6,7 @@
     tools:context=".AboutFragment">
 
     <LinearLayout
-        android:background="@drawable/background"
+        android:background="@drawable/back"
         android:orientation="vertical"
         android:paddingLeft="50dp"
         android:paddingRight="50dp"
@@ -22,18 +22,24 @@
         </ImageView>
 
         <com.codesgood.views.JustifiedTextView
+            android:background="@color/colorPrimary"
             android:textColor="#fff"
+            android:padding="4dp"
+            android:layout_marginTop="10dp"
             android:textStyle="bold"
+            android:layout_marginBottom="10dp"
             android:text="Go Physical Test merupakan suatu aplikasi yang digunakan untuk menggantikan form manual dalam pendataan test fisik."
             android:fontFamily="@font/roboto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </com.codesgood.views.JustifiedTextView>
         <com.codesgood.views.JustifiedTextView
+            android:background="@color/colorPrimary"
             android:textColor="#fff"
             android:textStyle="bold"
             android:text="Aplikasi ini diharapkan mampu menggantikan media manual dalam proses pendataannya. Sehingga hasil test dapat didata menggunakan handphone."
             android:fontFamily="@font/roboto"
+            android:padding="4dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </com.codesgood.views.JustifiedTextView>

@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.choirunnisa.physicaltest.ModelApps.LariModel;
+import com.choirunnisa.physicaltest.ModelApps.LariModel;
 import com.choirunnisa.physicaltest.R;
 
 import java.util.List;
@@ -28,7 +29,7 @@ public class LariAdapter extends RecyclerView.Adapter {
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.
                 from(parent.getContext()).
-                inflate(R.layout.table_content, parent, false);
+                inflate(R.layout.table_lcontent, parent, false);
 
         return new LariAdapter.RowViewHolder(itemView);
     }

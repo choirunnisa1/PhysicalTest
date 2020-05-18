@@ -94,29 +94,29 @@ public class TestLenganActivity extends AppCompatActivity {
 
                     if (rb_laki.isChecked()) {
                         str = "Laki-laki";
-                        if (input > 153.50) {
+                        if (input >259) {
                             hasil = "Baik Sekali";
-                        } else if (input == 112.50 || input >= 153) {
+                        } else if (input >= 187.50 && input <= 259) {
                             hasil = "Baik";
-                        } else if (input == 76.50 || input >= 112) {
+                        } else if (input >=127.50 && input <= 187.50) {
                             hasil = "Sedang";
-                        } else if (input == 52.6 || input >= 76) {
+                        } else if (input >=84.50 && input <= 127.50) {
                             hasil = "Kurang";
-                        } else if (input <= 52) {
+                        } else if (input < 84.50) {
                             hasil = "Kurang Sekali";
                         }
 
                     } else if (rb_perempuan.isChecked()) {
                         str = "Perempuan";
-                        if (input > 103.50) {
+                        if (input > 219.5) {
                             hasil = "Baik Sekali";
-                        } else if (input == 78.50 || input >= 103) {
+                        } else if (input >= 171.50 && input <= 219.50) {
                             hasil = "Baik";
-                        } else if (input == 57.50 || input >= 78) {
+                        } else if (input >= 127.50 && input <= 171.50) {
                             hasil = "Sedang";
-                        } else if (input == 28.50 || input >= 57) {
+                        } else if (input >= 81.50 && input <= 127.50) {
                             hasil = "Kurang";
-                        } else if (input <= 28) {
+                        } else if (input < 81.50) {
                             hasil = "Kurang Sekali";
                         }
                     }
@@ -139,11 +139,11 @@ public class TestLenganActivity extends AppCompatActivity {
     private List getPunggungList() {
         List punggungList = new ArrayList<>();
 
-        punggungList.add(new AgiltyModel(1, "Kurang Sekali", "<=52","<=28"));
-        punggungList.add(new AgiltyModel(2, "Kurang", "52.5-76","28.5-57"));
-        punggungList.add(new AgiltyModel(3, "Sedang", "76.5-112","57.5-78"));
-        punggungList.add(new AgiltyModel(4, "Baik", "112.5-153","78.5-103"));
-        punggungList.add(new AgiltyModel(5, "Baik Sekali", ">=153.5",">=102.5"));
+        punggungList.add(new AgiltyModel(1, "Kurang Sekali", "<84.50","<81.5"));
+        punggungList.add(new AgiltyModel(2, "Kurang", "84.50 - 127.50","81.5 - 127.50"));
+        punggungList.add(new AgiltyModel(3, "Sedang", "127.50 – 187.50","127.5 - 171.50"));
+        punggungList.add(new AgiltyModel(4, "Baik", "187.50 – 259","171.50 – 219.50"));
+        punggungList.add(new AgiltyModel(5, "Baik Sekali", ">259",">219.50"));
 
         return punggungList;
     }

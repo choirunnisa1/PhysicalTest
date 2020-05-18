@@ -47,7 +47,7 @@
                             android:textColor="#000"
                             android:fontFamily="@font/roboto"
                             android:textStyle="bold"
-                            android:text="Tes Lari 300 Meter"
+                            android:text="Tes Lari 30 Meter"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
                         </TextView>
@@ -78,7 +78,7 @@
                             android:textColor="#000"
                             android:fontFamily="@font/roboto"
                             android:textStyle="bold"
-                            android:text="Mengukur kapasitas anaerobik"
+                            android:text="Mengukur kecepatan"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
                         </com.codesgood.views.JustifiedTextView>
@@ -150,7 +150,7 @@
                                 android:textColor="#000"
                                 android:fontFamily="@font/roboto"
                                 android:textStyle="bold"
-                                android:text="Atlet melakukan pemanasan sebelum tes (joging, peregangan dan sprint pendek)"
+                                android:text="Atlet siap berdiri dibelakang garis start."
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
                             </com.codesgood.views.JustifiedTextView>
@@ -171,7 +171,7 @@
                                 android:textColor="#000"
                                 android:fontFamily="@font/roboto"
                                 android:textStyle="bold"
-                                android:text="Untuk memulai, semua perserta berbaris dibelakang garis start"
+                                android:text="Dengan aba – aba “ siap “, atlet siap berlari dengan start berdiri."
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
                             </com.codesgood.views.JustifiedTextView>
@@ -192,7 +192,7 @@
                                 android:textColor="#000"
                                 android:fontFamily="@font/roboto"
                                 android:textStyle="bold"
-                                android:text="Pada perintah “Ya”, atlet melakukan lari secepatnya, dan jam dihidupkan."
+                                android:text="Dengan aba – aba “ ya “, atlet berlari secepat – cepatnya dengan menempuh jarak 30 meter sampai melewati garis akhir."
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
                             </com.codesgood.views.JustifiedTextView>
@@ -213,7 +213,70 @@
                                 android:textColor="#000"
                                 android:fontFamily="@font/roboto"
                                 android:textStyle="bold"
-                                android:text="Pencatat skor memberikan skor dengan mencatat total total waktu yang dibtuhkan dalam menjalankan lari 300 m, sampai sepuluh detik"
+                                android:text="Kecepatan lari dihitung dari saat aba – aba “ ya"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            </com.codesgood.views.JustifiedTextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="e. "
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                            </TextView>
+                            <com.codesgood.views.JustifiedTextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="Pencatatan waktu dilakukan sampai dengan persepuluh detik (0,1 detik), bila memungkinkan dicatat sampai dengan perseratus (0,1 detik)"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            </com.codesgood.views.JustifiedTextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="f. "
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                            </TextView>
+                            <com.codesgood.views.JustifiedTextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="Tes dilakukan dua kali. Pelari melakukan tes berikutnya setelah berselang minimal satu pelari. Kecepatan lari yang terbaik yang dihitung."
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            </com.codesgood.views.JustifiedTextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="g. "
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                            </TextView>
+                            <com.codesgood.views.JustifiedTextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="Atlet dinyatakan gagal apabila melewati atau menyebrang lintasan lain"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
                             </com.codesgood.views.JustifiedTextView>

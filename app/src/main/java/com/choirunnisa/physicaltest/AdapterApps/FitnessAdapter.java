@@ -8,7 +8,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.choirunnisa.physicaltest.ModelApps.AgiltyModel;
-import com.choirunnisa.physicaltest.ModelApps.LariModel;
+import com.choirunnisa.physicaltest.ModelApps.FitnesModel;
+import com.choirunnisa.physicaltest.ModelApps.FitnesModel;
 import com.choirunnisa.physicaltest.R;
 
 import java.util.List;
@@ -42,28 +43,40 @@ public class FitnessAdapter extends RecyclerView.Adapter {
         int rowPos = rowViewHolder.getAdapterPosition();
 
         if (rowPos == 0) {
-
             rowViewHolder.txtRank.setBackgroundResource(R.drawable.table_header_cell_bg);
+            rowViewHolder.txtMovieName.setBackgroundResource(R.drawable.table_header_cell_bg);
             rowViewHolder.txtYear.setBackgroundResource(R.drawable.table_header_cell_bg);
             rowViewHolder.txtCost.setBackgroundResource(R.drawable.table_header_cell_bg);
+            rowViewHolder.txtKat.setBackgroundResource(R.drawable.table_header_cell_bg);
+
 
             rowViewHolder.txtRank.setTextColor(Color.parseColor("#FFFFFF"));
             rowViewHolder.txtYear.setTextColor(Color.parseColor("#FFFFFF"));
             rowViewHolder.txtCost.setTextColor(Color.parseColor("#FFFFFF"));
+            rowViewHolder.txtMovieName.setTextColor(Color.parseColor("#FFFFFF"));
+            rowViewHolder.txtKat.setTextColor(Color.parseColor("#FFFFFF"));
 
-            rowViewHolder.txtRank.setText("No");
-            rowViewHolder.txtYear.setText("Konsumsi Oksigen VO2Max");
-            rowViewHolder.txtCost.setText("Kategori Kebugaran");
+            rowViewHolder.txtRank.setText("Kategori");
+            rowViewHolder.txtMovieName.setText("<30 Tahun>");
+            rowViewHolder.txtYear.setText("30-39 Tahun");
+            rowViewHolder.txtCost.setText("40-49 Tahun");
+            rowViewHolder.txtKat.setText(">50 Tahun");
+            
         } else {
 
-            LariModel lariModel = (LariModel) fitneslist.get(rowPos - 1);
+            FitnesModel fitnesModel = (FitnesModel) fitneslist.get(rowPos - 1);
+            
             rowViewHolder.txtRank.setBackgroundResource(R.drawable.table_content_cell_bg);
+            rowViewHolder.txtMovieName.setBackgroundResource(R.drawable.table_content_cell_bg);
             rowViewHolder.txtYear.setBackgroundResource(R.drawable.table_content_cell_bg);
             rowViewHolder.txtCost.setBackgroundResource(R.drawable.table_content_cell_bg);
+            rowViewHolder.txtKat.setBackgroundResource(R.drawable.table_content_cell_bg);
 
-            rowViewHolder.txtRank.setText(lariModel.getNo() + "");
-            rowViewHolder.txtYear.setText(lariModel.getAngka() +"");
-            rowViewHolder.txtCost.setText(lariModel.getKategori() + "");
+            rowViewHolder.txtRank.setText(fitnesModel.getKat() + "");
+            rowViewHolder.txtMovieName.setText(fitnesModel.getUsiaA()+"");
+            rowViewHolder.txtYear.setText(fitnesModel.getUsiaB() + "");
+            rowViewHolder.txtCost.setText(fitnesModel.getUsiaC() + "");
+            rowViewHolder.txtKat.setText(fitnesModel.getUsiaD() + "");
 
         }
     }
@@ -75,14 +88,18 @@ public class FitnessAdapter extends RecyclerView.Adapter {
 
     public class RowViewHolder extends RecyclerView.ViewHolder {
         TextView txtRank;
+        TextView txtMovieName;
         TextView txtYear;
         TextView txtCost;
+        TextView txtKat;
 
         RowViewHolder(View itemView) {
             super(itemView);
             txtRank = itemView.findViewById(R.id.txtRank);
+            txtMovieName = itemView.findViewById(R.id.txtMovieName);
             txtYear = itemView.findViewById(R.id.txtYear);
             txtCost = itemView.findViewById(R.id.txtCost);
+            txtKat = itemView.findViewById(R.id.txtKat);
         }
     }
 }

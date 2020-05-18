@@ -25,7 +25,8 @@
         <activity android:name=".Kelincahan.TestAgilityActivity" />
         <activity android:name=".Kelincahan.TataAgilityActivity" />
         <activity android:name=".Kelincahan.HomeAgilityActivity" />
-        <activity android:name=".Kecepatan.TestLariActivity" />
+        <activity android:name=".Kecepatan.TestLariActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".Kecepatan.TataLariActivity" />
         <activity android:name=".Kecepatan.HomeLariActivity" />
         <activity android:name=".Kekuatan.TestLenganActivity" />

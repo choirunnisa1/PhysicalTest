@@ -10,6 +10,8 @@
     tools:context=".ReferensiActivity">
 
     <com.codesgood.views.JustifiedTextView
+        android:padding="4dp"
+        android:background="@color/colorPrimary"
         android:textColor="#fff"
         android:fontFamily="@font/roboto"
         android:textSize="16sp"
@@ -19,6 +21,8 @@
         android:layout_height="wrap_content">
     </com.codesgood.views.JustifiedTextView>
     <com.codesgood.views.JustifiedTextView
+        android:padding="4dp"
+        android:background="@color/colorPrimary"
         android:textColor="#fff"
         android:fontFamily="@font/roboto"
         android:textSize="16sp"
@@ -28,6 +32,8 @@
         android:layout_height="wrap_content">
     </com.codesgood.views.JustifiedTextView>
     <com.codesgood.views.JustifiedTextView
+        android:padding="4dp"
+        android:background="@color/colorPrimary"
         android:textColor="#fff"
         android:fontFamily="@font/roboto"
         android:textSize="16sp"
@@ -37,6 +43,8 @@
         android:layout_height="wrap_content">
     </com.codesgood.views.JustifiedTextView>
     <com.codesgood.views.JustifiedTextView
+        android:padding="4dp"
+        android:background="@color/colorPrimary"
         android:textColor="#fff"
         android:fontFamily="@font/roboto"
         android:textSize="16sp"
@@ -46,6 +54,8 @@
         android:layout_height="wrap_content">
     </com.codesgood.views.JustifiedTextView>
     <com.codesgood.views.JustifiedTextView
+        android:padding="4dp"
+        android:background="@color/colorPrimary"
         android:textColor="#fff"
         android:fontFamily="@font/roboto"
         android:textSize="16sp"
@@ -56,6 +66,8 @@
     </com.codesgood.views.JustifiedTextView>
 
     <com.codesgood.views.JustifiedTextView
+        android:padding="4dp"
+        android:background="@color/colorPrimary"
         android:textColor="#fff"
         android:fontFamily="@font/roboto"
         android:textSize="16sp"

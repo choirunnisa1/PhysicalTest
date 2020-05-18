@@ -34,4 +34,5 @@ public class LariModel {
     public void setKategori(String kategori) {
         Kategori = kategori;
     }
+
 }
