@@ -3,59 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/begrun"
     android:layout_height="match_parent"
-    android:background="#02a9f4"
     tools:context=".SplashActivity">
 
-
     <ImageView
-        android:id="@+id/logok"
-        android:layout_width="350dp"
-        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/logsplash"
         android:layout_centerInParent="true"
-        android:src="@drawable/logo"></ImageView>
-    <TextView
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:textAlignment="center"
-        android:fontFamily="@font/roboto"
-        android:textColor="#FFFF"
-        android:text="Go Physical Test"
-        android:layout_below="@id/logok"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
-    </TextView>
-
-
-    <ImageView
-        android:layout_marginLeft="6dp"
-        android:layout_marginBottom="8dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:src="@drawable/logo_upgris"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/upgris"
-        android:layout_width="90dp"
-        android:layout_height="90dp">
     </ImageView>
-
-    <TextView
-        android:layout_marginRight="8dp"
-        android:id="@+id/tv_from"
-        android:textSize="20sp"
-        android:fontFamily="@font/roboto"
-        android:textStyle="bold"
-        android:textAlignment="textEnd"
-        android:textColor="#fff"
-        android:layout_alignParentBottom="true"
-        android:text="Prodi Studi\nPendidikan Jasmani\nKesehatan dan Rekreasi\n Universitas PGRI Semarang"
-        android:layout_marginBottom="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </TextView>
-
-
 
 </RelativeLayout>

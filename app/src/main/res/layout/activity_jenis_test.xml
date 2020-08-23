@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back"
-    tools:context=".JenisTestActivity">
+   android:background="@drawable/begrunt"
+    tools:context=".MenuUtama.JenisTestActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -15,7 +16,6 @@
             android:paddingBottom="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
             android:orientation="vertical">
 
             <ImageView
@@ -23,18 +23,28 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="30dp"
-                android:src="@drawable/logo"></ImageView>
+                android:src="@drawable/pjkr"></ImageView>
 
             <TextView
                 android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/roboto"
+                android:fontFamily="@font/robotoe"
                 android:text="( Pilih Jenis Test )"
                 android:textAlignment="center"
-                android:textColor="#000"
+                android:textColor="#fff"
                 android:textSize="20sp"
                 android:textStyle="bold"></TextView>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:paddingBottom="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
 
             <Button
                 android:id="@+id/daya_tahan"
@@ -42,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginRight="30dp"
                 android:background="@drawable/side_two"
                 android:fontFamily="@font/roboto"
@@ -117,7 +127,7 @@
                 android:textStyle="bold"></Button>
 
             <Button
-                android:id="@+id/lainnya"
+                android:id="@+id/ketetapan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -127,11 +137,73 @@
                 android:background="@drawable/side_two"
                 android:fontFamily="@font/roboto"
                 android:padding="20dp"
-                android:text="LAINNYA"
+                android:text="KETETAPAN"
                 android:textColor="#fff"
                 android:textSize="20sp"
                 android:textStyle="bold"></Button>
+            <Button
+                android:id="@+id/kelentukan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/side_two"
+                android:fontFamily="@font/roboto"
+                android:padding="20dp"
+                android:text="KELENTUKAN"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold"></Button>
+            <Button
+                android:id="@+id/reaksi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/side_two"
+                android:fontFamily="@font/roboto"
+                android:padding="20dp"
+                android:text="REAKSI"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold"></Button>
+            <Button
+                android:id="@+id/koordinasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/side_two"
+                android:fontFamily="@font/roboto"
+                android:padding="20dp"
+                android:text="KOORDINASI"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold"></Button>
+            <Button
+                android:id="@+id/daya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/side_two"
+                android:fontFamily="@font/roboto"
+                android:padding="20dp"
+                android:text="DAYA EKSPLOSIF"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold"></Button>
+                </LinearLayout>
+            </ScrollView>
 
         </LinearLayout>
     </RelativeLayout>
-</ScrollView>
+</LinearLayout>

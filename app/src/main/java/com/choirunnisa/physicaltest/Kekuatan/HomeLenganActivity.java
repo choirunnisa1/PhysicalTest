@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.choirunnisa.physicaltest.JenisTestActivity;
+import com.choirunnisa.physicaltest.MenuUtama.JenisTestActivity;
 import com.choirunnisa.physicaltest.R;
 
 public class HomeLenganActivity extends AppCompatActivity {

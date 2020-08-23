@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".DayaTahan.TestFitnessActivity">
 <RelativeLayout
+    android:background="@drawable/begrunt"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginBottom="8dp">
@@ -16,16 +17,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/image"
-            android:layout_width="195dp"
-            android:layout_height="160dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="15dp"
-            android:src="@drawable/logo" />  <TextView
+       
+        <TextView
             android:fontFamily="@font/roboto"
             android:layout_marginTop="10dp"
-            android:textColor="#000"
+            android:textColor="#fff"
             android:text="Nama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -38,6 +34,7 @@
             android:padding="10dp"
             android:background="@drawable/back_edit"
             android:ems="10"
+            android:textColorHint="#fff"
             android:id="@+id/nama"
             android:hint="Masukkan Nama"
             android:layout_width="match_parent"
@@ -47,17 +44,19 @@
         <TextView
             android:fontFamily="@font/roboto"
             android:layout_marginTop="10dp"
-            android:textColor="#000"
+            android:textColor="#fff"
             android:text="Jenis Test"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </TextView>
         <EditText
+            android:textColor="#fff"
             android:fontFamily="@font/roboto"
             android:layout_marginTop="5dp"
             android:padding="10dp"
             android:background="@drawable/back_edit"
             android:ems="10"
+            android:textColorHint="#fff"
             android:enabled="false"
             android:id="@+id/jenis"
             android:text="Test Multi Fitness"
@@ -69,7 +68,7 @@
         <TextView
             android:fontFamily="@font/roboto"
             android:layout_marginTop="8dp"
-            android:textColor="#000"
+            android:textColor="#fff"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Jenis Kelamin\t:" />
@@ -80,6 +79,7 @@
             android:id="@+id/jk"
             android:layout_height="wrap_content">
             <RadioButton
+                android:textColor="#fff"
                 android:fontFamily="@font/roboto"
                 android:id="@+id/laki"
                 android:layout_width="wrap_content"
@@ -87,6 +87,7 @@
                 android:text="Laki - laki" />
 
             <RadioButton
+                android:textColor="#fff"
                 android:fontFamily="@font/roboto"
                 android:id="@+id/perempuan"
                 android:layout_width="wrap_content"
@@ -95,9 +96,30 @@
         </RadioGroup>
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto"
+            android:text="Usia "
+            android:textColor="#fff"></TextView>
+
+        <EditText
+            android:id="@+id/usia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/back_edit"
+            android:ems="10"
+            android:textColorHint="#fff"
+            android:fontFamily="@font/roboto"
+            android:hint="Masukkan Usia"
+            android:inputType="number"
+            android:padding="10dp"></EditText>
+
+        <TextView
             android:fontFamily="@font/roboto"
             android:layout_marginTop="10dp"
-            android:textColor="#000"
+            android:textColor="#fff"
             android:text="Konsumsi Oksigen VO2Max"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -109,6 +131,7 @@
             android:background="@drawable/back_edit"
             android:padding="10dp"
             android:ems="10"
+            android:textColorHint="#fff"
             android:inputType="number|numberDecimal"
             android:id="@+id/input"
             android:hint="Masukkan Nilai"
@@ -132,6 +155,7 @@
 
     </LinearLayout>
     <TextView
+        android:textColor="#fff"
         android:text="Norma Daya Tahan"
         android:textSize="14sp"
         android:textStyle="bold"

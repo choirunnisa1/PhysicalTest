@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/begrunt"
+    tools:context=".Reaksi.TataPenggarisActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.cardview.widget.CardView
+                    android:padding="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto"
+                                android:text="Penilaian"
+                                android:textColor="#000"></TextView>
+
+                            <com.codesgood.views.JustifiedTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto"
+                                android:text="Angka yang terbaik ditunjukan telapak tangan bagian bawah pada mistar saat melakukan tes merupakan nilai kecepatan reaksi tangan teste"
+                                android:textColor="#000">
+
+                            </com.codesgood.views.JustifiedTextView>
+                        </LinearLayout>
+
+                        <TextView
+                            android:textColor="#000"
+                            android:fontFamily="@font/roboto"
+                            android:text="Nama Tes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <TextView
+                            android:textColor="#000"
+                            android:fontFamily="@font/roboto"
+                            android:textStyle="bold"
+                            android:text="Tangkap penggaris"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:padding="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#000"
+                            android:fontFamily="@font/roboto"
+                            android:text="Tujuan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <com.codesgood.views.JustifiedTextView
+                            android:textColor="#000"
+                            android:fontFamily="@font/roboto"
+                            android:textStyle="bold"
+                            android:text="Untuk mengukur gerak reaksi kemampuan gerak tangan."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </com.codesgood.views.JustifiedTextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:padding="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#000"
+                            android:fontFamily="@font/roboto"
+                            android:text="Alat dan Fasilitas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <com.codesgood.views.JustifiedTextView
+                            android:textColor="#000"
+                            android:fontFamily="@font/roboto"
+                            android:textStyle="bold"
+                            android:text="a.  Alat tulis\nb.  Formulir Tes\nc.  Penggaris 30 cm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </com.codesgood.views.JustifiedTextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:padding="6dp"
+                    android:layout_margin="6dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#000"
+                            android:fontFamily="@font/roboto"
+                            android:text="Pelaksanaan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="1. "
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                            </TextView>
+                            <com.codesgood.views.JustifiedTextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="Teste dalam keadaan duduk dikursi dengan kedua tangan berada disisi meja, dengan jarak tangan kurang lebih 30 cm"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            </com.codesgood.views.JustifiedTextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="2. "
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                            </TextView>
+                            <com.codesgood.views.JustifiedTextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="Teste memegang mistar reaksi kemudian menjatuhkan secara vertical  diantara kedua telapak tangan teste dari atas tanpa aba-aba. "
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            </com.codesgood.views.JustifiedTextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:text="3. "
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                            </TextView>
+                            <com.codesgood.views.JustifiedTextView
+                                android:textColor="#000"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"
+                                android:text="Bersamaan dengan jatuhnya tongkat reaksi, tastee segera berusaha menjepit mistar reaksi tersebut secepat mungkin dengan menggunakan kedua tangannya "
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:padding="6dp"
+                    android:layout_margin="6dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

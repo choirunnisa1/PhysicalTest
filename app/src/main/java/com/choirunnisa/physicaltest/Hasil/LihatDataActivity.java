@@ -1,12 +1,16 @@
-package com.choirunnisa.physicaltest;
+package com.choirunnisa.physicaltest.Hasil;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.Manifest;
 import android.content.DialogInterface;
-import android.database.Cursor;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.Menu;
@@ -15,7 +19,11 @@ import android.widget.SearchView;
 import android.widget.Toast;
 
 import com.ajts.androidmads.library.SQLiteToExcel;
+import com.choirunnisa.physicaltest.Adapter;
+import com.choirunnisa.physicaltest.Database.DataContract;
+import com.choirunnisa.physicaltest.Database.DataHelper;
 import com.choirunnisa.physicaltest.ModelApps.Model;
+import com.choirunnisa.physicaltest.R;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -29,12 +37,13 @@ public class LihatDataActivity extends AppCompatActivity {
     private DataHelper dataHelper;
     private ActionBar actionBar;
 
-
+    private static final int REQUEST_WRITE_STORAGE_REQUEST_CODE = 112;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lihat_data);
 
+        requestAppPermissions();
         actionBar = getSupportActionBar();
         actionBar.setTitle("Daftar Hasil Test");
         actionBar.setDisplayHomeAsUpEnabled(true);
@@ -47,13 +56,6 @@ public class LihatDataActivity extends AppCompatActivity {
 
 
         loadData();
-
-//        File file = new File(directory_path);
-//        if (!file.()) {
-//            Log.v("File Created", String.valueOf(file.mkdir()));
-//        }
-
-
     }
 
     private void loadData() {
@@ -75,7 +77,7 @@ public class LihatDataActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onResume() {
+    public void onResume() {
         super.onResume();
         loadData();
     }
@@ -121,6 +123,14 @@ public class LihatDataActivity extends AppCompatActivity {
                 .setCancelable(false)
                 .show();
     } else if (id==R.id.action_excel){
+        exportExcel();
+    }
+
+    return super.onOptionsItemSelected(item);
+
+    }
+
+    public void exportExcel(){
         String directory_path = Environment.getExternalStorageDirectory().getPath()+"/Backup/";
         File file = new File(directory_path);
         if (!file.exists()){
@@ -135,7 +145,7 @@ public class LihatDataActivity extends AppCompatActivity {
 
             @Override
             public void onCompleted(String filePath) {
-                Toast.makeText(LihatDataActivity.this,"Data Berhasil Dieksport pada Folder Backup dengan nama file datatates.xls",Toast.LENGTH_SHORT).show();
+                Toast.makeText(LihatDataActivity.this,"Data Berhasil Dieksport pada Folder Backup dengan nama file datates.xls",Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -144,28 +154,29 @@ public class LihatDataActivity extends AppCompatActivity {
 
             }
         });
-//        sqliteToExcel = new SQLiteToExcel(getApplicationContext(), DataContract.DB_NAME, directory_path);
-//        sqliteToExcel.("users.xls", new SQLiteToExcel.ExportListener() {
-//            @Override
-//            public void onStart() {
-//
-//            }
-//
-//            @Override
-//            public void onCompleted(String filePath) {
-//                Utils.showSnackBar(view, "Successfully Exported");
-//            }
-//
-//            @Override
-//            public void onError(Exception e) {
-//                Utils.showSnackBar(view, e.getMessage());
-//            }
-//        });
-//    }
+    }
+    private void requestAppPermissions() {
+        if (android.os.Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
+            return;
+        }
+
+        if (hasReadPermissions() && hasWritePermissions()) {
+            return;
+        }
+
+        ActivityCompat.requestPermissions(this,
+                new String[] {
+                        Manifest.permission.READ_EXTERNAL_STORAGE,
+                        Manifest.permission.WRITE_EXTERNAL_STORAGE
+                }, REQUEST_WRITE_STORAGE_REQUEST_CODE); // your request code
     }
 
-    return super.onOptionsItemSelected(item);
+    private boolean hasReadPermissions() {
+        return (ContextCompat.checkSelfPermission(getBaseContext(), Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED);
+    }
 
+    private boolean hasWritePermissions() {
+        return (ContextCompat.checkSelfPermission(getBaseContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED);
     }
 
     @Override

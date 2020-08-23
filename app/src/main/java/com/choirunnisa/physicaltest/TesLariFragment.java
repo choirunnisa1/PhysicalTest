@@ -79,9 +79,12 @@ public class TesLariFragment extends Fragment {
                 EditText editinput = (EditText) getActivity().findViewById(R.id.input);
                 String opInput = editinput.getText().toString();
                 RadioGroup rb_fitness = getActivity().findViewById(R.id.jk);
+                EditText editUsia = getActivity().findViewById(R.id.usia);
+                String opUsia = editUsia.getText().toString();
 
-                if (opName.equals("") || opInput.length() == 0 || rb_fitness.getCheckedRadioButtonId() == -1) {
-                    Toast.makeText(getContext(), "Mohon Lengkapi Terlebih Dahulu",
+
+                if (opName.equals("") || opInput.length() == 0 || rb_fitness.getCheckedRadioButtonId() == -1 || opUsia.equals("")) {
+                    Toast.makeText(getActivity(), "Mohon Lengkapi Terlebih Dahulu",
                             Toast.LENGTH_SHORT).show();
                 } else {
 
@@ -127,6 +130,7 @@ public class TesLariFragment extends Fragment {
                     intent.putExtra("jenis", opJenis);
                     intent.putExtra("input", opInput);
                     intent.putExtra("hasil", hasil);
+                    intent.putExtra("usia",opUsia);
                     intent.putExtra("jenis_kelamin", str);
                     startActivity(intent);
                 }

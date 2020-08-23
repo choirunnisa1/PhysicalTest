@@ -8,15 +8,36 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ReferensiActivity"></activity>
-        <activity android:name=".DetailDataActivity" />
+        <activity android:name=".DayaEksplosif.TestStandingActivity"></activity>
+        <activity android:name=".DayaEksplosif.TataStandingActivity" />
+        <activity android:name=".Koordinasi.TestSquadActivity" />
+        <activity android:name=".Koordinasi.TataSquadActivity" />
+        <activity android:name=".Koordinasi.HomeKoordinasiActivity" />
+        <activity android:name=".Reaksi.TesPenggarisActivity" />
+        <activity android:name=".Reaksi.TataPenggarisActivity" />
+        <activity android:name=".Reaksi.HomeReaksiActivity" />
+        <activity android:name=".Kelentukan.TestTrunkActivity" />
+        <activity android:name=".Kelentukan.TataTrunkActivity" />
+        <activity android:name=".Kelentukan.TestSitActivity" />
+        <activity android:name=".Kelentukan.TataSitActivity" />
+        <activity android:name=".Kelentukan.HomeKelentukanActivity" />
+        <activity android:name=".DayaEksplosif.TestMedicineActivity" />
+        <activity android:name=".DayaEksplosif.TataMedicineActivity" />
+        <activity android:name=".DayaEksplosif.TestLoncatTegakActivity" />
+        <activity android:name=".DayaEksplosif.TataLoncatTegakActivity" />
+        <activity android:name=".DayaEksplosif.HomePowerActivity" />
+        <activity android:name=".Ketepatan.TestOverhandActivity" />
+        <activity android:name=".Ketepatan.TataOverhandActivity" />
+        <activity android:name=".Ketepatan.HomeKetepatanActivity" />
+        <activity android:name=".MenuUtama.ReferensiActivity" />
+        <activity android:name=".Hasil.DetailDataActivity" />
         <activity
-            android:name=".TentangActivity"
+            android:name=".MenuUtama.TentangActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".HasilActivity" />
         <activity android:name=".Keseimbangan.TestStrockActivity" />
@@ -25,8 +46,9 @@
         <activity android:name=".Kelincahan.TestAgilityActivity" />
         <activity android:name=".Kelincahan.TataAgilityActivity" />
         <activity android:name=".Kelincahan.HomeAgilityActivity" />
-        <activity android:name=".Kecepatan.TestLariActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Kecepatan.TestLariActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Kecepatan.TataLariActivity" />
         <activity android:name=".Kecepatan.HomeLariActivity" />
         <activity android:name=".Kekuatan.TestLenganActivity" />
@@ -35,9 +57,9 @@
         <activity android:name=".DayaTahan.TestFitnessActivity" />
         <activity android:name=".DayaTahan.TataFitnessActivity" />
         <activity android:name=".DayaTahan.HomeFitnessActivity" />
-        <activity android:name=".LihatDataActivity" />
+        <activity android:name=".Hasil.LihatDataActivity" />
         <activity
-            android:name=".JenisTestActivity"
+            android:name=".MenuUtama.JenisTestActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainActivity"

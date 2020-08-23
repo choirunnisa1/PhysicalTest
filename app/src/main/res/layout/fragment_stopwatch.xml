@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
+    android:background="@drawable/begrunt"
     tools:context=".StopwatchFragment">
 <RelativeLayout
     android:layout_width="match_parent"
@@ -15,7 +16,7 @@
         android:id="@+id/textView"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:textColor="@color/colorPrimary"
+        android:textColor="#fff"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -23,7 +24,7 @@
         android:text="Start"
         android:background="@drawable/side_main"
         android:fontFamily="@font/roboto"
-        android:textColor="#000"
+        android:textColor="#fff"
         android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,7 +36,7 @@
 
     <Button
         android:text="Pause"
-        android:textColor="#000"
+        android:textColor="#fff"
         android:textStyle="bold"
         android:background="@drawable/side_main"
         android:layout_width="wrap_content"
@@ -47,7 +48,7 @@
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:textColor="#000"
+        android:textColor="#fff"
         android:textStyle="bold"
         android:background="@drawable/side_main"
         android:text="Reset"
@@ -60,6 +61,8 @@
         android:id="@+id/button3" />
 
     <Button
+        android:textColor="#fff"
+        android:background="@drawable/back_edit"
         android:text="Save Lap"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

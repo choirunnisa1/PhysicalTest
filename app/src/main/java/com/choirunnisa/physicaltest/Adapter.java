@@ -10,6 +10,9 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.choirunnisa.physicaltest.Database.DataHelper;
+import com.choirunnisa.physicaltest.Hasil.DetailDataActivity;
+import com.choirunnisa.physicaltest.Hasil.LihatDataActivity;
 import com.choirunnisa.physicaltest.ModelApps.Model;
 
 import java.util.ArrayList;
@@ -49,6 +52,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.HolderInput>{
         final String nama = model.getNama();
         final String jenis = model.getJenis();
         final String jkel = model.getJkel();
+        final String usia  = model.getUsia();
         final String input = model.getInput();
         final String hasil  = model.getHasil();
         final String waktu = model.getWaktu();
@@ -79,6 +83,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.HolderInput>{
                         ""+nama,
                         ""+jenis,
                         ""+jkel,
+                        ""+usia,
                         ""+input,
                         ""+hasil,
                         ""+waktu
@@ -89,7 +94,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.HolderInput>{
 
     private void showMoreDialog(String position, final String id,
                                 final String nama, final String jenis,
-                                final String jkel, final String input,
+                                final String jkel, final String usia,final String input,
                                 final String hasil, final String waktu) {
         String[] options = {"Detail","Delete"};
         AlertDialog.Builder builder = new AlertDialog.Builder(context);

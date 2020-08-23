@@ -1,4 +1,4 @@
-package com.choirunnisa.physicaltest;
+package com.choirunnisa.physicaltest.Database;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import com.choirunnisa.physicaltest.Database.DataContract;
 import com.choirunnisa.physicaltest.ModelApps.Model;
 
 import java.text.SimpleDateFormat;
@@ -33,7 +34,7 @@ public class DataHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
     public long insertData(String nama, String test,
-                String jkel,String input, String hasil,String waktu) {
+                String jkel,String usia,String input, String hasil,String waktu) {
 
             SQLiteDatabase db = this.getWritableDatabase();
             //query to insert record in database table
@@ -42,6 +43,7 @@ public class DataHelper extends SQLiteOpenHelper {
             values.put(DataContract.NAME, nama );
             values.put(DataContract.TEST, test);
             values.put(DataContract.JKEL, jkel);
+            values.put(DataContract.USIA, usia);
             values.put(DataContract.INPUT, input);
             values.put(DataContract.HASIL, hasil);
             values.put(DataContract.TIME, waktu);
@@ -65,6 +67,7 @@ public class DataHelper extends SQLiteOpenHelper {
                         "" + cursor.getString(cursor.getColumnIndex(DataContract.NAME)),
                         "" + cursor.getString(cursor.getColumnIndex(DataContract.TEST)),
                         "" + cursor.getString(cursor.getColumnIndex(DataContract.JKEL)),
+                        "" + cursor.getString(cursor.getColumnIndex(DataContract.USIA)),
                         "" + cursor.getString(cursor.getColumnIndex(DataContract.INPUT)),
                         "" + cursor.getString(cursor.getColumnIndex(DataContract.HASIL)),
                         "" + cursor.getString(cursor.getColumnIndex(DataContract.TIME))
@@ -92,6 +95,7 @@ public class DataHelper extends SQLiteOpenHelper {
                         "" + cursor.getString(cursor.getColumnIndex(DataContract.NAME)),
                         "" + cursor.getString(cursor.getColumnIndex(DataContract.TEST)),
                         "" + cursor.getString(cursor.getColumnIndex(DataContract.JKEL)),
+                        "" + cursor.getString(cursor.getColumnIndex(DataContract.USIA)),
                         "" + cursor.getString(cursor.getColumnIndex(DataContract.INPUT)),
                         "" + cursor.getString(cursor.getColumnIndex(DataContract.HASIL)),
                         "" + cursor.getString(cursor.getColumnIndex(DataContract.TIME))

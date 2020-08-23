@@ -94,9 +94,11 @@ public class TestStrockActivity extends AppCompatActivity {
                 EditText editinput = (EditText) findViewById(R.id.input);
                 String opInput = editinput.getText().toString();
                 RadioGroup rb_fitness = findViewById(R.id.jk);
+                EditText editUsia = findViewById(R.id.usia);
+                String opUsia = editUsia.getText().toString();
 
 
-                if (opName.equals("") || opInput.length() == 0 || rb_fitness.getCheckedRadioButtonId() == -1) {
+                if (opName.equals("") || opInput.length() == 0 || rb_fitness.getCheckedRadioButtonId() == -1 || opUsia.equals("")) {
                     Toast.makeText(getApplicationContext(), "Mohon Lengkapi Terlebih Dahulu",
                             Toast.LENGTH_SHORT).show();
 
@@ -175,6 +177,7 @@ public class TestStrockActivity extends AppCompatActivity {
                     intent.putExtra("input", opInput);
                     intent.putExtra("hasil", hasil);
                     intent.putExtra("jenis", h_jenis);
+                    intent.putExtra("usia",opUsia);
                     intent.putExtra("jenis_kelamin", str);
                     startActivity(intent);
                 }

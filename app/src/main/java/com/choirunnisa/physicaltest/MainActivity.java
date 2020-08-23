@@ -7,6 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.choirunnisa.physicaltest.Hasil.LihatDataActivity;
+import com.choirunnisa.physicaltest.MenuUtama.JenisTestActivity;
+import com.choirunnisa.physicaltest.MenuUtama.ReferensiActivity;
+import com.choirunnisa.physicaltest.MenuUtama.TentangActivity;
+
 public class MainActivity extends AppCompatActivity {
     Button btn_physical, btn_data, btn_tentang,btn_referensi;
 

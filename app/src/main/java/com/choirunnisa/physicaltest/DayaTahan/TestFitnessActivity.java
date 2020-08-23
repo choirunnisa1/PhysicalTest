@@ -1,46 +1,23 @@
 package com.choirunnisa.physicaltest.DayaTahan;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.Manifest;
-import android.content.ContentValues;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.graphics.Bitmap;
-import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-import com.blogspot.atifsoftwares.circularimageview.CircularImageView;
 import com.choirunnisa.physicaltest.AdapterApps.FitnessAdapter;
-import com.choirunnisa.physicaltest.AdapterApps.TableViewAdapter;
-import com.choirunnisa.physicaltest.DataHelper;
 import com.choirunnisa.physicaltest.HasilActivity;
-import com.choirunnisa.physicaltest.Kecepatan.TestLariActivity;
-import com.choirunnisa.physicaltest.Kelincahan.TestAgilityActivity;
-import com.choirunnisa.physicaltest.LihatDataActivity;
-import com.choirunnisa.physicaltest.ModelApps.AgiltyModel;
 import com.choirunnisa.physicaltest.ModelApps.FitnesModel;
-import com.choirunnisa.physicaltest.ModelApps.LariModel;
 import com.choirunnisa.physicaltest.R;
-import com.theartofdev.edmodo.cropper.CropImage;
-import com.theartofdev.edmodo.cropper.CropImageView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -89,10 +66,14 @@ public class TestFitnessActivity extends AppCompatActivity {
                 EditText editinput = (EditText) findViewById(R.id.input);
                 String opInput = editinput.getText().toString();
                 RadioGroup rb_fitness = findViewById(R.id.jk);
+                EditText editUsia = findViewById(R.id.usia);
+                String opUsia = editUsia.getText().toString();
 
-                if (opName.equals("") || opInput.length() == 0 || rb_fitness.getCheckedRadioButtonId() == -1) {
+
+                if (opName.equals("") || opInput.length() == 0 || rb_fitness.getCheckedRadioButtonId() == -1 || opUsia.equals("")) {
                     Toast.makeText(getApplicationContext(), "Mohon Lengkapi Terlebih Dahulu",
                             Toast.LENGTH_SHORT).show();
+
                 } else {
 
 
@@ -121,6 +102,7 @@ public class TestFitnessActivity extends AppCompatActivity {
                     intent.putExtra("jenis", opJenis);
                     intent.putExtra("input", opInput);
                     intent.putExtra("hasil", hasil);
+                    intent.putExtra("usia",opUsia);
                     intent.putExtra("jenis_kelamin", str);
                     startActivity(intent);
                 }

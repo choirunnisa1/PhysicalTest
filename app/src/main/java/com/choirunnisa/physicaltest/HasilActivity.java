@@ -2,23 +2,16 @@ package com.choirunnisa.physicaltest;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 
-import android.Manifest;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.database.Cursor;
-import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.blogspot.atifsoftwares.circularimageview.CircularImageView;
-import com.choirunnisa.physicaltest.DayaTahan.HomeFitnessActivity;
-import com.choirunnisa.physicaltest.Kelincahan.HomeAgilityActivity;
+import com.choirunnisa.physicaltest.Database.DataHelper;
+import com.choirunnisa.physicaltest.MenuUtama.JenisTestActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -26,9 +19,9 @@ import java.util.Locale;
 
 public class HasilActivity extends AppCompatActivity {
 
-    TextView tvNama,tvGender,tvJenis,tvSkor,tvHasil;
+    TextView tvNama,tvGender,tvJenis,tvSkor,tvHasil, tvUsia;
     ActionBar actionBar;
-    private String nama,j_kel,jenis,input,hasil;
+    private String nama,j_kel,jenis,usia,input,hasil;
     Button btn_Save;
 
     private DataHelper dataHelper;
@@ -45,6 +38,7 @@ public class HasilActivity extends AppCompatActivity {
         Intent dataIntent = getIntent();
         nama = dataIntent.getStringExtra("nama");
         input = dataIntent.getStringExtra("input");
+        usia = dataIntent.getStringExtra("usia");
         jenis = dataIntent.getStringExtra("jenis");
         hasil = dataIntent.getStringExtra("hasil");
         Bundle jkel = getIntent().getExtras();
@@ -52,14 +46,17 @@ public class HasilActivity extends AppCompatActivity {
         tvNama = findViewById(R.id.namaf);
         tvGender = findViewById(R.id.genderf);
         tvJenis = findViewById(R.id.jenisf);
+        tvUsia = findViewById(R.id.usiaf);
         tvSkor = findViewById(R.id.skorf);
         tvHasil = findViewById(R.id.hasilf);
         btn_Save = findViewById(R.id.input);
 
         dataHelper = new DataHelper(this);
 
+
         tvNama.setText(nama);
         tvJenis.setText(jenis);
+        tvUsia.setText(usia);
         tvSkor.setText(input);
         tvHasil.setText(hasil);
         if(jkel!=null){
@@ -72,6 +69,8 @@ public class HasilActivity extends AppCompatActivity {
             public void onClick(View v) {
                 inputData();
                 Intent daya = new Intent(HasilActivity.this, MainActivity.class);
+                daya.addCategory(Intent.CATEGORY_HOME);
+                daya.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(daya);
             }
         });
@@ -81,6 +80,7 @@ public class HasilActivity extends AppCompatActivity {
         nama = ""+tvNama.getText().toString().trim();
         input = ""+tvSkor.getText().toString().trim();
         jenis =""+tvJenis.getText().toString().trim();
+        usia = ""+tvUsia.getText().toString().trim();
         hasil = ""+tvHasil.getText().toString().trim();
         j_kel =""+tvGender.getText().toString().trim();
 
@@ -91,6 +91,7 @@ public class HasilActivity extends AppCompatActivity {
                 ""+j_kel,
                 ""+input,
                 ""+hasil,
+                ""+usia,
                 ""+getDateTime()
         );
 

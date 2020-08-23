@@ -87,9 +87,11 @@ public class TestAgilityActivity extends AppCompatActivity {
                 EditText editinput = (EditText) findViewById(R.id.skor);
                 String opInput = editinput.getText().toString();
                 RadioGroup rb_fitness = findViewById(R.id.jk);
+                EditText editUsia = findViewById(R.id.usia);
+                String opUsia = editUsia.getText().toString();
 
 
-                if (opName.equals("") || opInput.length() == 0 || rb_fitness.getCheckedRadioButtonId() == -1) {
+                if (opName.equals("") || opInput.length() == 0 || rb_fitness.getCheckedRadioButtonId() == -1 || opUsia.equals("")) {
                     Toast.makeText(getApplicationContext(), "Mohon Lengkapi Terlebih Dahulu",
                             Toast.LENGTH_SHORT).show();
                 } else {
@@ -128,6 +130,7 @@ public class TestAgilityActivity extends AppCompatActivity {
                     intent.putExtra("jenis", opJenis);
                     intent.putExtra("input", opInput);
                     intent.putExtra("hasil", hasil);
+                    intent.putExtra("usia",opUsia);
                     intent.putExtra("jenis_kelamin", str);
                     startActivity(intent);
                 }

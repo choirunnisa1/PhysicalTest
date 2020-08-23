@@ -1,16 +1,26 @@
 package com.choirunnisa.physicaltest.ModelApps;
 
 public class Model {
-   private String id, nama, jenis, jkel, input, hasil, waktu;
+   private String id, nama, jenis, jkel, input, hasil, usia, waktu;
 
-    public Model(String id, String nama, String jenis, String jkel, String input, String hasil, String waktu) {
+
+
+    public Model(String id, String nama, String jenis, String jkel, String usia, String input, String hasil, String waktu) {
         this.id = id;
         this.nama = nama;
         this.jenis = jenis;
         this.jkel = jkel;
+        this.usia = usia;
         this.input = input;
         this.hasil = hasil;
         this.waktu = waktu;
+    }
+    public String getUsia() {
+        return usia;
+    }
+
+    public void setUsia(String usia) {
+        this.usia = usia;
     }
 
     public String getId() {
