@@ -22,19 +22,6 @@
             android:layout_height="150dp">
         </ImageView>
 
-        <TextView
-            android:layout_marginTop="5dp"
-            android:textAlignment="center"
-            android:textStyle="bold"
-            android:fontFamily="@font/roboto"
-            android:textColor="#0000"
-            android:text="PJKR Universitas PGRI Semarang"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-        </TextView>
-
-
         <Button
             android:fontFamily="@font/roboto"
             android:layout_marginLeft="20dp"
@@ -47,7 +34,7 @@
             android:textColor="#fff"
             android:text="Physical test"
             android:background="@drawable/side_two"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </Button>

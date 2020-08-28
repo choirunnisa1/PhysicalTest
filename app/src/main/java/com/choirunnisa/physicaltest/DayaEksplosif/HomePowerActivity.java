@@ -34,7 +34,7 @@ public class HomePowerActivity extends AppCompatActivity {
         btn_standing = findViewById(R.id.btn_standing);
 
         actionBar = getSupportActionBar();
-        actionBar.setTitle("Daya Eksplosif");
+        actionBar.setTitle("Kecepatan - Power");
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
 

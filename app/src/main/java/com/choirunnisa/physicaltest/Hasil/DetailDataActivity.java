@@ -72,7 +72,7 @@ public class DetailDataActivity extends AppCompatActivity {
                 dNama.setText(": "+nama);
                 dJkel.setText(": "+jkel);
                 dTest.setText(": "+jenis);
-                dHasil.setText(": "+usia);
+                dUsia.setText(": "+usia);
                 dInput.setText(": "+input);
                 dHasil.setText(": "+hasil);
                 dWaktu.setText(": "+waktu);

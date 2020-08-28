@@ -21,7 +21,7 @@ public class TataLoncatTegakActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tata_loncat_tegak);
 
         actionBar = getSupportActionBar();
-        actionBar.setTitle("Tata Cara Test Loncat Tegak");
+        actionBar.setTitle("Tata Cara Vertical Jump Test");
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
 

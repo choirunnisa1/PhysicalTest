@@ -52,7 +52,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:fontFamily="@font/roboto"
-                            android:text="Test Loncat Tegak"
+                            android:text="Vertical Jump Test"
                             android:textColor="#000"
                             android:textSize="15dp"
                             android:textStyle="bold" />

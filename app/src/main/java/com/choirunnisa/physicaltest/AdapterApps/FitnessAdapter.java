@@ -30,7 +30,7 @@ public class FitnessAdapter extends RecyclerView.Adapter {
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.
                 from(parent.getContext()).
-                inflate(R.layout.table_content, parent, false);
+                inflate(R.layout.table_fitness, parent, false);
 
         return new FitnessAdapter.RowViewHolder(itemView);
     }
@@ -43,6 +43,7 @@ public class FitnessAdapter extends RecyclerView.Adapter {
         int rowPos = rowViewHolder.getAdapterPosition();
 
         if (rowPos == 0) {
+            rowViewHolder.txtNo.setBackgroundResource(R.drawable.table_header_cell_bg);
             rowViewHolder.txtRank.setBackgroundResource(R.drawable.table_header_cell_bg);
             rowViewHolder.txtMovieName.setBackgroundResource(R.drawable.table_header_cell_bg);
             rowViewHolder.txtYear.setBackgroundResource(R.drawable.table_header_cell_bg);
@@ -50,12 +51,14 @@ public class FitnessAdapter extends RecyclerView.Adapter {
             rowViewHolder.txtKat.setBackgroundResource(R.drawable.table_header_cell_bg);
 
 
+            rowViewHolder.txtNo.setTextColor(Color.parseColor("#FFFFFF"));
             rowViewHolder.txtRank.setTextColor(Color.parseColor("#FFFFFF"));
             rowViewHolder.txtYear.setTextColor(Color.parseColor("#FFFFFF"));
             rowViewHolder.txtCost.setTextColor(Color.parseColor("#FFFFFF"));
             rowViewHolder.txtMovieName.setTextColor(Color.parseColor("#FFFFFF"));
             rowViewHolder.txtKat.setTextColor(Color.parseColor("#FFFFFF"));
 
+            rowViewHolder.txtNo.setText("No");
             rowViewHolder.txtRank.setText("Kategori");
             rowViewHolder.txtMovieName.setText("<30 Tahun>");
             rowViewHolder.txtYear.setText("30-39 Tahun");
@@ -65,13 +68,16 @@ public class FitnessAdapter extends RecyclerView.Adapter {
         } else {
 
             FitnesModel fitnesModel = (FitnesModel) fitneslist.get(rowPos - 1);
-            
+
+            rowViewHolder.txtNo.setBackgroundResource(R.drawable.table_content_cell_bg);
             rowViewHolder.txtRank.setBackgroundResource(R.drawable.table_content_cell_bg);
             rowViewHolder.txtMovieName.setBackgroundResource(R.drawable.table_content_cell_bg);
             rowViewHolder.txtYear.setBackgroundResource(R.drawable.table_content_cell_bg);
             rowViewHolder.txtCost.setBackgroundResource(R.drawable.table_content_cell_bg);
             rowViewHolder.txtKat.setBackgroundResource(R.drawable.table_content_cell_bg);
 
+
+            rowViewHolder.txtNo.setText(fitnesModel.getNo() + "");
             rowViewHolder.txtRank.setText(fitnesModel.getKat() + "");
             rowViewHolder.txtMovieName.setText(fitnesModel.getUsiaA()+"");
             rowViewHolder.txtYear.setText(fitnesModel.getUsiaB() + "");
@@ -87,6 +93,7 @@ public class FitnessAdapter extends RecyclerView.Adapter {
     }
 
     public class RowViewHolder extends RecyclerView.ViewHolder {
+        TextView txtNo;
         TextView txtRank;
         TextView txtMovieName;
         TextView txtYear;
@@ -95,6 +102,7 @@ public class FitnessAdapter extends RecyclerView.Adapter {
 
         RowViewHolder(View itemView) {
             super(itemView);
+            txtNo = itemView.findViewById(R.id.txtNo);
             txtRank = itemView.findViewById(R.id.txtRank);
             txtMovieName = itemView.findViewById(R.id.txtMovieName);
             txtYear = itemView.findViewById(R.id.txtYear);

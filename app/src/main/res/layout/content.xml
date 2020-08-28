@@ -7,7 +7,7 @@
         app:cardElevation="3dp"
         app:cardUseCompatPadding="true"
         app:cardCornerRadius="3dp"
-        app:cardBackgroundColor="#fff"
+        app:cardBackgroundColor="#6DFFFFFF"
         app:contentPadding="5dp">
 
         <RelativeLayout
@@ -37,28 +37,28 @@
                     android:fontFamily="@font/roboto"
                     android:text="nama"
                     android:id="@+id/namaTv"
-                    android:textColor="#000"
+                    android:textColor="#fff"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
                 <TextView
                     android:fontFamily="@font/roboto"
                     android:text="jenis"
                     android:id="@+id/jenisTv"
-                    android:textColor="#000"
+                    android:textColor="#fff"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
                 <TextView
                     android:fontFamily="@font/roboto"
                     android:text="input"
                     android:id="@+id/inputTv"
-                    android:textColor="#000"
+                    android:textColor="#fff"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
                 <TextView
                     android:fontFamily="@font/roboto"
                     android:text="hasil"
                     android:id="@+id/hasilTv"
-                    android:textColor="#000"
+                    android:textColor="#fff"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 

@@ -25,7 +25,7 @@ public class HomeKetepatanActivity extends AppCompatActivity {
         btn_overhand = findViewById(R.id.btn_overhand);
 
         actionBar = getSupportActionBar();
-        actionBar.setTitle("Ketetapan");
+        actionBar.setTitle("Ketepatan");
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
 

@@ -114,11 +114,11 @@ public class TestFitnessActivity extends AppCompatActivity {
     private List getFitnessList() {
         List fitnessList = new ArrayList<>();
 
-        fitnessList.add(new FitnesModel("Sangat Buruk", "<25.0", "<25.0","<25.0",""));
-        fitnessList.add(new FitnesModel("Buruk", "25.0-33.7", "25.0-30.1","25.0-26.4","<25.0"));
-        fitnessList.add(new FitnesModel("Sedang", "33.8-42.5", "30.2-39.1","26.5-35.4","25.0-33.7"));
-        fitnessList.add(new FitnesModel("Baik", "42.6-51.5", "39-48","35.5-45.0","33.8-43.0"));
-        fitnessList.add(new FitnesModel("Sangat Baik", ">51.6", ">48",">45.1",">43.1"));
+        fitnessList.add(new FitnesModel("1","Sangat Buruk", "<25.0", "<25.0","<25.0",""));
+        fitnessList.add(new FitnesModel("2","Buruk", "25.0-33.7", "25.0-30.1","25.0-26.4","<25.0"));
+        fitnessList.add(new FitnesModel("3","Sedang", "33.8-42.5", "30.2-39.1","26.5-35.4","25.0-33.7"));
+        fitnessList.add(new FitnesModel("4","Baik", "42.6-51.5", "39-48","35.5-45.0","33.8-43.0"));
+        fitnessList.add(new FitnesModel("5","Sangat Baik", ">51.6", ">48",">45.1",">43.1"));
 
         return fitnessList;
     }

@@ -1,18 +1,28 @@
 package com.choirunnisa.physicaltest.ModelApps;
 
 public class FitnesModel {
+    private String No;
     private String Kat;
     private String UsiaA;
     private String UsiaB;
     private String UsiaC;
     private String UsiaD;
 
-    public FitnesModel(String kat, String usiaA, String usiaB, String usiaC, String usiaD) {
+    public FitnesModel(String no,String kat, String usiaA, String usiaB, String usiaC, String usiaD) {
+        No = no;
         Kat = kat;
         UsiaA = usiaA;
         UsiaB = usiaB;
         UsiaC = usiaC;
         UsiaD = usiaD;
+    }
+
+    public String getNo() {
+        return No;
+    }
+
+    public void setNo(String no) {
+        No = no;
     }
 
     public String getKat() {

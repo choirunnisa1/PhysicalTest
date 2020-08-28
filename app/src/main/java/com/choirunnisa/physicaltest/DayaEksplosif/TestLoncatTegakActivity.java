@@ -41,7 +41,7 @@ public class TestLoncatTegakActivity extends AppCompatActivity {
         rb_perempuan = findViewById(R.id.perempuan);
 
         actionBar = getSupportActionBar();
-        actionBar.setTitle("Loncat Accuracy Throw Test");
+        actionBar.setTitle("Vertical Jump Test");
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
 
