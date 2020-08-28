@@ -1,4 +1,4 @@
-package com.choirunnisa.physicaltest.ModelApps;
+package com.choirunnisa.physicaltest;
 
 public class Model {
    private String id, nama, jenis, jkel, input, hasil, usia, waktu;

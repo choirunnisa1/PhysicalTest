@@ -13,7 +13,6 @@ import android.widget.TextView;
 import com.choirunnisa.physicaltest.Database.DataHelper;
 import com.choirunnisa.physicaltest.Hasil.DetailDataActivity;
 import com.choirunnisa.physicaltest.Hasil.LihatDataActivity;
-import com.choirunnisa.physicaltest.ModelApps.Model;
 
 import java.util.ArrayList;
 

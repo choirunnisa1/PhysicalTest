@@ -89,9 +89,9 @@ public class HasilActivity extends AppCompatActivity {
                 ""+nama,
                 ""+jenis,
                 ""+j_kel,
+                ""+usia,
                 ""+input,
                 ""+hasil,
-                ""+usia,
                 ""+getDateTime()
         );
 

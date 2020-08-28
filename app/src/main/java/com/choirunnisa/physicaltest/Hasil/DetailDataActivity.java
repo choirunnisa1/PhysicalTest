@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.choirunnisa.physicaltest.Database.DataContract;
+import com.choirunnisa.physicaltest.DataContract;
 import com.choirunnisa.physicaltest.Database.DataHelper;
 import com.choirunnisa.physicaltest.R;
 
@@ -72,7 +72,7 @@ public class DetailDataActivity extends AppCompatActivity {
                 dNama.setText(": "+nama);
                 dJkel.setText(": "+jkel);
                 dTest.setText(": "+jenis);
-                dUsia.setText(": "+usia);
+                dUsia.setText(": "+usia+" tahun");
                 dInput.setText(": "+input);
                 dHasil.setText(": "+hasil);
                 dWaktu.setText(": "+waktu);

@@ -20,9 +20,9 @@ import android.widget.Toast;
 
 import com.ajts.androidmads.library.SQLiteToExcel;
 import com.choirunnisa.physicaltest.Adapter;
-import com.choirunnisa.physicaltest.Database.DataContract;
+import com.choirunnisa.physicaltest.DataContract;
 import com.choirunnisa.physicaltest.Database.DataHelper;
-import com.choirunnisa.physicaltest.ModelApps.Model;
+import com.choirunnisa.physicaltest.Model;
 import com.choirunnisa.physicaltest.R;
 
 import java.io.File;

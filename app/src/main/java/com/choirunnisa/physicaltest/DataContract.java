@@ -1,4 +1,4 @@
-package com.choirunnisa.physicaltest.Database;
+package com.choirunnisa.physicaltest;
 
 import android.graphics.Bitmap;
 
